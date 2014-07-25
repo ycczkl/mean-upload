@@ -22,5 +22,4 @@ module.exports = function(MeanUpload, app, auth, database) {
     app.post('/meanUpload/upload', uploadConfig, function(req, res) {
         // TODO: change response to file info
         res.send(200, "file uploaded");
-    })
-};
+    });
