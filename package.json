@@ -14,7 +14,8 @@
     "postinstall": "node ../../node_modules/bower/bin/bower install"
   },
   "dependencies": {
-    "connect-multiparty": "latest"
+    "connect-multiparty": "latest",
+    "multer": "latest"
   },
   "license": "MIT",
   "readme": "README: meanUpload\n\n__Not ready to be used!!! __\n",
