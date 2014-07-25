@@ -8,10 +8,10 @@ module.exports = function(MeanUpload, app, auth, database) {
         meanUpload = require('../controllers/meanUpload'),
         uploadConfig = require('../controllers/uploadConfig');
 
-    app.get('/meanUpload/example/render', function(req, res, next) {
+    app.get('/meanUpload/example/render', function (req, res, next) {
         MeanUpload.render('index', {
             package: 'mean-upload'
-        }, function(err, html) {
+        }, function (err, html) {
             //Rendering a view from the Package server/views
             res.send(html);
         });
@@ -19,7 +19,9 @@ module.exports = function(MeanUpload, app, auth, database) {
 
     //app.post('/meanUpload/upload', multipartMiddleware, meanUpload.upload);
 
-    app.post('/meanUpload/upload', uploadConfig, function(req, res) {
+    app.post('/meanUpload/upload', uploadConfig, function (req, res) {
         // TODO: change response to file info
-        res.send(200, "file uploaded");
+        res.send("file uploaded");
     });
+
+}
