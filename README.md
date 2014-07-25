@@ -27,3 +27,10 @@ upload-file-callback="uploadFileCallback(file)">
 file-dest = Default destination on server to upload the files to
 upload-callback = Default name of all files uploaded callback
 upload-file-callback = Default name for each file upload completion
+
+### This forked version
+[ycczkl][ycczkl] & [wilbeibi][wilbeibi]
+
+
+[ycczkl]: https://github.com/ycczkl
+[wilbeibi]: https://github.com/wilbeibi

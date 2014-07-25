@@ -5,7 +5,8 @@ module.exports = function(MeanUpload, app, auth, database) {
 
     var multipart = require('connect-multiparty'),
         multipartMiddleware = multipart(),
-        meanUpload = require('../controllers/meanUpload');
+        meanUpload = require('../controllers/meanUpload'),
+        uploadConfig = require('../controllers/uploadConfig');
 
     app.get('/meanUpload/example/render', function(req, res, next) {
         MeanUpload.render('index', {
@@ -16,5 +17,7 @@ module.exports = function(MeanUpload, app, auth, database) {
         });
     });
 
-    app.post('/meanUpload/upload', multipartMiddleware, meanUpload.upload);
+    //app.post('/meanUpload/upload', multipartMiddleware, meanUpload.upload);
+
+    app.post('/meanUpload/upload', uploadConfig)
 };
